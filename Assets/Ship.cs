@@ -15,6 +15,7 @@ public class Ship : MonoBehaviour
         if (Input.GetKey(KeyCode.DownArrow)) { MovesShipY(-1); }
     }
 
+    // This moves the ship in the Y direction.
     private void MovesShipY(int direction)
     {
         var throttle = direction * Speed;
