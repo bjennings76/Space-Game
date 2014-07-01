@@ -1,0 +1,7 @@
+Library/
+Assets/Editor/UnityVS/UnityVS.VersionSpecific.dll
+Assets/Editor/UnityVS/UnityVS.VersionSpecific.dll.meta
+Temp/
+*.csproj
+*.sln
+*.DotSettings
