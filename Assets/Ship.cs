@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Ship : MonoBehaviour
 {
-    public float speed = 1f;
+    public float Speed = 1f;
 
     // Use this for initialization
     private void Start() { }
@@ -17,8 +17,7 @@ public class Ship : MonoBehaviour
 
     private void MovesShipY(int direction)
     {
-        var throttle = direction * speed;
+        var throttle = direction * Speed;
         this.transform.localPosition += new Vector3(0f, throttle, 0f) * Time.deltaTime;
     }
-
 }
