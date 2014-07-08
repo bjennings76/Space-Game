@@ -20,7 +20,7 @@ public class Ship : MonoBehaviour
         }
         else
         {
-            Engine.StopEngine();
+            Engine.Stop();
         }
 
         // Turning the ship
@@ -45,6 +45,6 @@ public class Ship : MonoBehaviour
     private void MovesShipY(float speed)
     {
         transform.Translate(new Vector3(0f, speed, 0f) * Time.deltaTime);
-        Engine.StartEngine();
+        Engine.Start();
     }
 }

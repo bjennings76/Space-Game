@@ -6,13 +6,13 @@ public class Engine : MonoBehaviour
     public bool EngineOn;
     public bool Toggle;
 
-    public void StartEngine()
+    public void Start()
     {
         EngineOn = true;
         gameObject.SetActive(true);
     }
 
-    public void StopEngine()
+    public void Stop()
     {
         EngineOn = false;
         gameObject.SetActive(false);
