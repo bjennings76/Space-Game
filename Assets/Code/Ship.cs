@@ -26,12 +26,12 @@ public class Ship : MonoBehaviour
         // Turning the ship
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            TurnShip(-TurnSpeed);
+            TurnShip(TurnSpeed);
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            TurnShip(TurnSpeed);
+            TurnShip(-TurnSpeed);
         }
     }
 
