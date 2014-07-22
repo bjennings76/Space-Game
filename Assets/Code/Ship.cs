@@ -38,13 +38,15 @@ public class Ship : MonoBehaviour
     // This turns the ship on the Z axis
     private void TurnShip(float turnSpeed)
     {
-        transform.Rotate(0, 0, turnSpeed);
+        var turnAmountPerSecond = turnSpeed*Time.deltaTime;
+        rigidbody2D.AddTorque(turnAmountPerSecond);
     }
 
     // This moves the ship in the local Y direction.
     private void MovesShipY(float speed)
-    {
-        transform.Translate(new Vector3(0f, speed, 0f) * Time.deltaTime);
+    {        
+        var movementVector = transform.up*speed*Time.deltaTime;
+        rigidbody2D.AddForce(movementVector, ForceMode2D.Impulse);
         Engine.Start();
     }
 }
