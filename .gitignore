@@ -5,3 +5,4 @@ Temp/
 *.csproj
 *.sln
 *.DotSettings
+*.DS_Store
