@@ -6,3 +6,5 @@ Temp/
 *.sln
 *.DotSettings
 *.DS_Store
+UnityVS.*
+obj/
